@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #eee;
+}
+
+.maincontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #4b2e83;
+}
+
+.loginbox {
+	display: flex;
+	width: 80%;
+	max-width: 900px;
+	background-color: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+	width: 50%;
+	background-color: #ddd;
+}
+
+.image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.Logindetails {
+	width: 50%;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.Logindetails h1 {
+	font-size: 32px;
+	margin-bottom: 30px;
+	color: #333;
+}
+
+/* ✅ Style for error message */
+.error-message {
+	color: red;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.Logindetails label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333;
+}
+
+/* ✅ Fix input[type="email"] to input[type="text"] for username */
+.Logindetails input[type="text"], .Logindetails input[type="password"] {
+	width: 100%;
+	padding: 12px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.forgot {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 14px;
+	text-decoration: none;
+	color: #4b2e83;
+}
+
+.Logindetails input[type="submit"] {
+	width: 100%;
+	padding: 12px;
+	background-color: #4b2e83;
+	color: white;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.register {
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.register a {
+	color: #4b2e83;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.error-message {
+	background-color: #ffe0e0;
+	color: #b30000;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 12px;
+	border: 1px solid #ffcccc;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.error-message {
+	transition: all 0.3s ease;
+	opacity: 1;
+}
